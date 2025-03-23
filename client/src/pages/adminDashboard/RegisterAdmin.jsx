@@ -97,6 +97,13 @@ const AdminRegister = () => {
                   <span className="text-gray-500 text-sm sm:text-base">Cover image</span>
                 )}
               </div>
+              <input
+                        type="file"
+                        accept="image/*"
+                        id="coverImageInput"
+                        onChange={handleCoverImageChange}
+                        className="hidden"
+                        />
               
               {/* Avatar Section */}
               <div className="absolute -bottom-8 sm:-bottom-16 left-1/2 transform -translate-x-1/2">
@@ -114,6 +121,13 @@ const AdminRegister = () => {
                     <span className="text-gray-500 text-sm sm:text-base">Avatar</span>
                   )}
                 </div>
+                <input
+                                type="file"
+                                accept="image/*"
+                                id="avatarInput"
+                                onChange={handleAvatarChange}
+                                className="hidden"
+                            />
               </div>
             </div>
           </div>
